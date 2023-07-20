@@ -64,16 +64,26 @@ const result = howPeket(100)
 // 4.Print all the multiplication tables with numbers from 1 to 10
 // 5.  Calculate the sum of numbers from 1 to 10 // array number
 // 6.Calculate the sum of odd numbers greater than 10 and less than 30
+// 7.Create a function that will convert from Celsius to Fahrenheit
+//  8. Calculate the average of the numbers in an array of numbers
 
+ 
+function averageArray (ar){
+   const length = ar.length
+   let sum = 0
 
-function oddnumberSum (){
-  let sum = 0
-  for(let i = 11; i <= 30; i= i + 2){
-    console.log(i)
-    sum = sum + i
-  }
-  console.log(sum)
+   for(let i = 0; i< length; i++ ){
+    sum = sum + ar[i]
+   }
+   console.log("sum :", sum)
+   return sum / length
 }
 
-oddnumberSum()
+
+let ar = [1, 3, 9, 15, 90];
+let avg = averageArray(ar);
+
+console.log(avg)
+
+
 
