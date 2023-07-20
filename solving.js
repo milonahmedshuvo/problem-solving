@@ -63,17 +63,17 @@ const result = howPeket(100)
 //3. Print the multiplication table with 4
 // 4.Print all the multiplication tables with numbers from 1 to 10
 // 5.  Calculate the sum of numbers from 1 to 10 // array number
+// 6.Calculate the sum of odd numbers greater than 10 and less than 30
 
-function arraySum (array){
-     let sum = 0
-     for(let i = 0 ; i < array.length; i++){
-      console.log(array[i])
-      sum = sum + array[i]
-     }
-    
-     return sum
+
+function oddnumberSum (){
+  let sum = 0
+  for(let i = 11; i <= 30; i= i + 2){
+    console.log(i)
+    sum = sum + i
+  }
+  console.log(sum)
 }
 
+oddnumberSum()
 
-const arrayNumber= [ 5, 10, 20,]
-console.log(arraySum(arrayNumber))
