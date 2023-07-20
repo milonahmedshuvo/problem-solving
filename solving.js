@@ -61,26 +61,19 @@ const result = howPeket(100)
 
 
 //3. Print the multiplication table with 4
-
-
 // 4.Print all the multiplication tables with numbers from 1 to 10
+// 5.  Calculate the sum of numbers from 1 to 10 // array number
 
-for(let i = 1; i <= 10; i++){
-  multiplicationNumber(i)
-  print(" ")
+function arraySum (array){
+     let sum = 0
+     for(let i = 0 ; i < array.length; i++){
+      console.log(array[i])
+      sum = sum + array[i]
+     }
+    
+     return sum
 }
 
 
-
-function multiplicationNumber (n){
-  for(let i = 1; i<=10; i++){
-    const row = n + " * " + i +" ="+ n * i
-    print(row)
-  }
-}
-
-function print (namota){
-  // console.log(namota)
-}
-
-
+const arrayNumber= [ 5, 10, 20,]
+console.log(arraySum(arrayNumber))
