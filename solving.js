@@ -60,20 +60,27 @@ const result = howPeket(100)
     
 
 
-// Print the multiplication table with 4
+//3. Print the multiplication table with 4
 
-for (let i = 1; i <= 10; i++){
-    
-    const row = "7 * " + i + " =" + 7 * i
-     multiplication(row)
+
+// 4.Print all the multiplication tables with numbers from 1 to 10
+
+for(let i = 1; i <= 10; i++){
+  multiplicationNumber(i)
+  print(" ")
 }
 
 
-function multiplication(gun) {
-  console.log(gun)
+
+function multiplicationNumber (n){
+  for(let i = 1; i<=10; i++){
+    const row = n + " * " + i +" ="+ n * i
+    print(row)
+  }
 }
 
-
-
+function print (namota){
+  // console.log(namota)
+}
 
 
