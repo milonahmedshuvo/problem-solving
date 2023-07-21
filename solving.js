@@ -79,22 +79,22 @@ const result = howPeket(100)
 // 19. Create a function that will receive an array of numbers as argument and will return a new array with distinct elements/ unic element array thake nite hbe naw array return 
 // 20. Calculate the sum of numbers received in a comma delimited string
 // 21.Create a function to convert a CSV text to a “bi-dimensional” array
-
-function csvConvertArray(data){
-   const ar =data.split("\n")
-   console.log(ar) 
+// 22.Create a function that converts a string to an array of characters
+// 23.Create a function that will convert a string in an array containing the ASCII codes of each character
 
 
-   for (let i = 0; i <ar.length; i++){
-       const el = ar[i].split(";")
-       ar[i] = el
-       
-   }
+function getCharCodes(string){
 
-   return ar
+  let ar= []
+  for (let i=0; i<string.length; i++){
+       const code = string.charCodeAt(i)
+       ar.push(code)
+  }
 
+  return ar
 }
-const data= "John;Smith;954-000-0000\nMich;Tiger;305-000-0000\nMonique;Vasquez;103-000-0000"
+
+console.log(getCharCodes('i like javascript'))
 
 
 
