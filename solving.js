@@ -78,8 +78,27 @@ const result = howPeket(100)
 // 18. Create a function that will receive an array of numbers as argument and will return a new array with distinct elements
 // 19. Create a function that will receive an array of numbers as argument and will return a new array with distinct elements/ unic element array thake nite hbe naw array return 
 // 20. Calculate the sum of numbers received in a comma delimited string
-// 21.Create a function to convert a CSV text to a “bi-dimensional” array
+// 21.Create a function to convert a CSV text to a “bi-dimensional/multipule” array te
 // 22.Create a function that converts a string to an array of characters
 // 23.Create a function that will convert a string in an array containing the ASCII codes of each character
-// 24. Create a function that will convert an array containing ASCII codes in a string/ String.fromCharCode
+// 24.Create a function that will convert an array containing ASCII codes in a string/ String.fromCharCode
+// 25.Create a function to calculate the distance between two points defined by their x, y coordinates
+// result : 360.5551275463989 /math.sqrt(gun pluz)
+// input:  100, 100, 400, 300
 
+// 26.Create a function that will receive a bi-dimensional array as argument and a number and will extract as a unidimensional array the column specified by the number
+// let ar = [ ["John", 120],
+//             ["Jane", 115],
+//             ["Thomas", 123],
+//             ["Mel", 112],
+//             ["Charley", 122]
+//          ];
+
+
+// 27.Create a function that will convert a string containing a binary number 
+// input: "11111111"
+// result: 255
+
+// 28.Create a function to calculate the sum of all the numbers in a jagged array
+// input: [1, 2, [15, [23], [5, 12]], [100]]
+// result: 158
