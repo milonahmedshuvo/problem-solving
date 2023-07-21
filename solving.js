@@ -74,10 +74,27 @@ const result = howPeket(100)
 // 14.Reverse a string /for loop 
 // 15.Create a function that will merge two arrays and return the result as a new array/ 3 way solve 
 // 16.  Create a function that will receive two arrays of numbers as arguments and return an array composed of all the numbers that are either in the first array or second array but not in both
+// 17. Create a function that will receive two arrays and will return an array with elements that are in the first array but not in the second
+// 18. Create a function that will receive an array of numbers as argument and will return a new array with distinct elements
 
 
 
 
+
+function getDistinctElements(ar){
+     const newArray = ar.filter((el, index) => {
+
+         return ar.indexOf(el) === index
+     })
+
+     return newArray
+}
+
+
+let ar = getDistinctElements([1, 2, 3, 60, 60, -1, 2, 9, 7, 10, -1, 100]);
+
+
+console.log(ar)
 
 
 
