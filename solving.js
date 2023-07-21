@@ -68,22 +68,25 @@ const result = howPeket(100)
 //  8. Calculate the average of the numbers in an array of numbers
 // 9. Create a function that receives an array of numbers and returns an array containing only the positive numbers by? for loop/for of loop / filter 
 // 10.Find the maximum number in an array of numbers
-// 11. Calculate the sum of digits of a positive integer number
+// 11.Calculate the sum of digits of a positive integer number
+// 12.Rotate an array to the left 1 position/ shift, unshift, posh, pop
+// 13.Reverse an array/ reverse method, for loop
+// 14.Reverse a string /for loop 
+// 15.Create a function that will merge two arrays and return the result as a new array
 
 
-  function sumDigitParseIn (num){
-       const s = num.toString()
-       let sum = 0
-       for( el of s){
-        const digitConvertNumber = parseInt(el)
-        sum = sum +digitConvertNumber
-       }
 
-       return sum
-  }
 
-const number = 12345
-const sumDigit = sumDigitParseIn(number)  
+
+
+
+
+
+
+
+
+
+
 
 
 
