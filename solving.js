@@ -81,20 +81,5 @@ const result = howPeket(100)
 // 21.Create a function to convert a CSV text to a “bi-dimensional” array
 // 22.Create a function that converts a string to an array of characters
 // 23.Create a function that will convert a string in an array containing the ASCII codes of each character
-
-
-function getCharCodes(string){
-
-  let ar= []
-  for (let i=0; i<string.length; i++){
-       const code = string.charCodeAt(i)
-       ar.push(code)
-  }
-
-  return ar
-}
-
-console.log(getCharCodes('i like javascript'))
-
-
+// 24. Create a function that will convert an array containing ASCII codes in a string/ String.fromCharCode
 
