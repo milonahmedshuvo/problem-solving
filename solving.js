@@ -72,7 +72,8 @@ const result = howPeket(100)
 // 12.Rotate an array to the left 1 position/ shift, unshift, posh, pop
 // 13.Reverse an array/ reverse method, for loop
 // 14.Reverse a string /for loop 
-// 15.Create a function that will merge two arrays and return the result as a new array
+// 15.Create a function that will merge two arrays and return the result as a new array/ 3 way solve 
+// 16.  Create a function that will receive two arrays of numbers as arguments and return an array composed of all the numbers that are either in the first array or second array but not in both
 
 
 
