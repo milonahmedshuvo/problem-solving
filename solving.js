@@ -66,24 +66,19 @@ const result = howPeket(100)
 // 6.Calculate the sum of odd numbers greater than 10 and less than 30
 // 7.Create a function that will convert from Celsius to Fahrenheit
 //  8. Calculate the average of the numbers in an array of numbers
+// 9. Create a function that receives an array of numbers and returns an array containing only the positive numbers by? for loop/for of loop / filter 
+// 10.Find the maximum number in an array of numbers
+
+
 
  
-function averageArray (ar){
-   const length = ar.length
-   let sum = 0
-
-   for(let i = 0; i< length; i++ ){
-    sum = sum + ar[i]
-   }
-   console.log("sum :", sum)
-   return sum / length
-}
 
 
-let ar = [1, 3, 9, 15, 90];
-let avg = averageArray(ar);
 
-console.log(avg)
+
+
+
+
 
 
 
