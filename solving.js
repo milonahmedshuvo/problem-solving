@@ -76,46 +76,25 @@ const result = howPeket(100)
 // 16.  Create a function that will receive two arrays of numbers as arguments and return an array composed of all the numbers that are either in the first array or second array but not in both
 // 17. Create a function that will receive two arrays and will return an array with elements that are in the first array but not in the second
 // 18. Create a function that will receive an array of numbers as argument and will return a new array with distinct elements
+// 19. Create a function that will receive an array of numbers as argument and will return a new array with distinct elements/ unic element array thake nite hbe naw array return 
+// 20. Calculate the sum of numbers received in a comma delimited string
+// 21.Create a function to convert a CSV text to a “bi-dimensional” array
+
+function csvConvertArray(data){
+   const ar =data.split("\n")
+   console.log(ar) 
 
 
+   for (let i = 0; i <ar.length; i++){
+       const el = ar[i].split(";")
+       ar[i] = el
+       
+   }
 
+   return ar
 
-
-function getDistinctElements(ar){
-     const newArray = ar.filter((el, index) => {
-
-         return ar.indexOf(el) === index
-     })
-
-     return newArray
 }
-
-
-let ar = getDistinctElements([1, 2, 3, 60, 60, -1, 2, 9, 7, 10, -1, 100]);
-
-
-console.log(ar)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+const data= "John;Smith;954-000-0000\nMich;Tiger;305-000-0000\nMonique;Vasquez;103-000-0000"
 
 
 
