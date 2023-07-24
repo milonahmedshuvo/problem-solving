@@ -102,3 +102,22 @@ const result = howPeket(100)
 // 28.Create a function to calculate the sum of all the numbers in a jagged array
 // input: [1, 2, [15, [23], [5, 12]], [100]]
 // result: 158
+
+// 29. Find the maximum number in a jagged array of numbers or array of numbers
+// input: [[1, 2, 3], [40, 52], [6, 7, 8, 9]]
+// result: 52
+
+
+//30.string eash word asynding order make / small to big
+// input: "java is a programming laguase"
+// output: "a is java lanusge programming"
+
+// 31. string convert eash word reverse 
+  // input: "love bangladesh"
+  // output: "evol hsedalgnab"
+
+// 32.false value remove from array // duplicates value remove
+// 33.asynding order number from array 
+
+
+  

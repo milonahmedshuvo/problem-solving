@@ -248,13 +248,7 @@ title.addEventListener("mouseup", function (){
 
 
 
-// Array method Push, splice, slice, map, filter, forEach, /object tricks, / for loop, in to object / of array /reduce
-
-
-
-
-
-
+// Array method Push, splice, slice, map, filter, forEach, /object tricks, / for loop, for in to object / for of array /reduce
 
 
 /**************************************
@@ -339,7 +333,7 @@ function multiplyBy(factor) {
 
 
 
-// asyncouns prossess oparation managed ****************
+// asyncouns prossess oparation manage****************
 
 const fetchDatas = () => {
 
