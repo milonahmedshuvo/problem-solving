@@ -120,4 +120,16 @@ const result = howPeket(100)
 // 33.asynding order number from array 
 
 
-  
+
+
+
+function averageNumber (arr){
+          
+         let sum  = 0
+         for (let el of arr){
+             sum = sum +el
+         }
+         return sum / arr.length
+}
+const arr = [2, 20, 13, 5]
+console.log(averageNumber(arr))
