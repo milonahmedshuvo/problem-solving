@@ -122,17 +122,16 @@ const result = howPeket(100)
 
 
 function possitiveNumber (arr){
+       let big = [] 
+      for(let i = 0; i <arr.length; i++ ){
+         if(arr[i] > 0){
+          big.push(arr[i])
+         }
+      }
 
-   const positive = []
-  for(let el of arr){
-     if(el > 0 ){
-      positive.push(el)
-     }
-  }
-
-  return positive
+      return big
 }
 
-const arr = [2, 20, -13, -5, 3,0, 2]
+const arr = [2, 20, -13, -5, 3,0, 424]
 const positive = possitiveNumber(arr)
 console.log(positive)
