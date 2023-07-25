@@ -121,15 +121,18 @@ const result = howPeket(100)
 
 
 
+function possitiveNumber (arr){
 
+   const positive = []
+  for(let el of arr){
+     if(el > 0 ){
+      positive.push(el)
+     }
+  }
 
-function averageNumber (arr){
-          
-         let sum  = 0
-         for (let el of arr){
-             sum = sum +el
-         }
-         return sum / arr.length
+  return positive
 }
-const arr = [2, 20, 13, 5]
-console.log(averageNumber(arr))
+
+const arr = [2, 20, -13, -5, 3,0, 2]
+const positive = possitiveNumber(arr)
+console.log(positive)
