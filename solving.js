@@ -121,17 +121,20 @@ const result = howPeket(100)
 
 
 
-function possitiveNumber (arr){
-       let big = [] 
-      for(let i = 0; i <arr.length; i++ ){
-         if(arr[i] > 0){
-          big.push(arr[i])
-         }
+
+
+function integerConvert (str){
+        let sum = 0
+      for(let i = 0; i<str.length; i++){
+          const char = str[i]
+           if(char){
+            let number =parseInt(char)
+            sum = sum + number
+           }
       }
 
-      return big
+      return sum
 }
 
-const arr = [2, 20, -13, -5, 3,0, 424]
-const positive = possitiveNumber(arr)
-console.log(positive)
+const str = '5325'
+const val = integerConvert(str)
