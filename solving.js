@@ -120,21 +120,17 @@ const result = howPeket(100)
 // 33.asynding order number from array 
 
 
-
-
-
-function integerConvert (str){
-        let sum = 0
-      for(let i = 0; i<str.length; i++){
-          const char = str[i]
-           if(char){
-            let number =parseInt(char)
-            sum = sum + number
-           }
-      }
-
-      return sum
+var myCustomObj = {
+  name: 'Zonayed Ahmed',
+  age: 21,
+  job: 'Student',
+  anotherObj: {
+     name: 'Ahmed Zonayed',
+     value: function ()  {
+        console.log( this , this.name);
+     }
+  }
 }
 
-const str = '5325'
-const val = integerConvert(str)
+
+
