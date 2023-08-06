@@ -160,15 +160,15 @@ const webDeveloper = () => {
 
 // handle Promise 
 const makePromise = (control) =>{
-  return new Promise((resolve, reject) => {
+  return new Promise((res, reject) => {
 
       setTimeout(() =>{
         if(control){
-          resolve("Succefull data in Server")
+          res("Succefull data in Server")
         }else{
           reject("promise is reject")
         }
-      },3000)
+      },1000)
   })
 }
 
@@ -178,3 +178,46 @@ makePromise(true)
  
 })
 .catch((er) => console.log(er))
+
+
+// maltipule Promise handle 
+const promise1 = (control) =>{
+    return new Promise ((resolve, reject ) => {
+       setTimeout(() =>{
+         if(control){
+          resolve("success promise 1")
+         } else{
+          reject("reject promise 1")
+         }
+       },1000)
+
+       
+    })
+}
+
+
+promise1(true)
+.then((re) => console.log(re))
+.catch((err) => console.log(err))
+
+
+const promise2 = (control) => {
+   return new Promise((resolve, reject ) => {
+
+       setTimeout(() => {
+         if(control){
+          resolve("Succes promise 2")
+         }else{
+          reject("Reject Promise 2")
+         }
+       },1000)
+   })
+}
+
+promise2(true)
+.then((res)=> console.log(res))
+.catch((err)=> console.log(err))
+
+Promise.all([promise1(true), promise2(true)])
+.then((res)=> console.log(res))
+.catch((err)=> console.log(err))
