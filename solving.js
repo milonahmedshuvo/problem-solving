@@ -221,3 +221,24 @@ promise2(true)
 Promise.all([promise1(true), promise2(true)])
 .then((res)=> console.log(res))
 .catch((err)=> console.log(err))
+
+
+var valu;
+setTimeout(function() {
+ valu = 12;
+}, 3000)
+// result is undefined 
+
+
+
+// Error handleling 
+try{
+  // console.aula('This is an error');
+  // throw new Error( "throw error massage" )
+  // throw "your are error khaiso"
+}catch(err){
+  console.log("error", err)
+}finally{
+  // console.log("ata always run korbe")
+}
+
