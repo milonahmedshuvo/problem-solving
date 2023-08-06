@@ -119,7 +119,7 @@ const result = howPeket(100)
 // 32.false value remove from array // duplicates value remove
 // 33.asynding order number from array 
 
-
+// my custom difind object use this keyword
 var myCustomObj = {
   name: 'Zonayed Ahmed',
   age: 21,
@@ -127,10 +127,36 @@ var myCustomObj = {
   anotherObj: {
      name: 'Ahmed Zonayed',
      value: function ()  {
-        console.log( this , this.name);
+        console.log( this);
      }
   }
 }
+
+
+
+// working asyncouns prosess 
+function getValue () {
+  var x;
+  setTimeout(() =>{
+    x = 100
+  },1000)
+  return x
+}
+// result is undefined dibe
+
+
+
+const sowfterEngineer = () =>{
+  setTimeout(()=>{
+    console.log("software engineer")
+  },3000)
+}
+
+
+const webDeveloper = () => {
+   console.log("web Developer")
+}
+
 
 
 
