@@ -119,7 +119,7 @@ const result = howPeket(100)
 // 32.false value remove from array // duplicates value remove
 // 33.asynding order number from array 
 
-// my custom difind object use this keyword
+//1 my custom difind object use this keyword
 var myCustomObj = {
   name: 'Zonayed Ahmed',
   age: 21,
@@ -134,7 +134,7 @@ var myCustomObj = {
 
 
 
-// working asyncouns prosess 
+//2 working asyncouns prosess 
 function getValue () {
   var x;
   setTimeout(() =>{
@@ -158,7 +158,7 @@ const webDeveloper = () => {
 }
 
 
-// handle Promise 
+//3. handle Promise 
 const makePromise = (control) =>{
   return new Promise((res, reject) => {
 
@@ -180,7 +180,7 @@ makePromise(true)
 .catch((er) => console.log(er))
 
 
-// maltipule Promise handle 
+//4. maltipule Promise handle 
 const promise1 = (control) =>{
     return new Promise ((resolve, reject ) => {
        setTimeout(() =>{
@@ -196,11 +196,6 @@ const promise1 = (control) =>{
 }
 
 
-promise1(true)
-.then((re) => console.log(re))
-.catch((err) => console.log(err))
-
-
 const promise2 = (control) => {
    return new Promise((resolve, reject ) => {
 
@@ -214,13 +209,16 @@ const promise2 = (control) => {
    })
 }
 
-promise2(true)
-.then((res)=> console.log(res))
-.catch((err)=> console.log(err))
 
 Promise.all([promise1(true), promise2(true)])
 .then((res)=> console.log(res))
 .catch((err)=> console.log(err))
+
+
+
+
+
+
 
 
 var valu;
@@ -231,7 +229,7 @@ setTimeout(function() {
 
 
 
-// Error handleling 
+//5. Error handleling 
 try{
   // console.aula('This is an error');
   // throw new Error( "throw error massage" )
@@ -240,5 +238,47 @@ try{
   console.log("error", err)
 }finally{
   // console.log("ata always run korbe")
+}
+
+
+//6. callback complex thke async await use korbo syncrouns vbe ans error handling korbo
+const promiseOne = (control) => {
+  return new Promise((resolve, reject) => {
+       setTimeout(() => {
+        if(control){
+          resolve("promise one resolve")
+        }else{
+          reject("promise one reject")
+        }
+       },1000)
+  })
+}
+
+
+const promiseTwo = (control) => {
+     return new Promise ((resolve, reject) => {
+       setTimeout(() =>{
+        if(control){
+          resolve("promise two resolve")
+        }else{
+          reject("promise two reject")
+        }
+       },4000)
+     })
+}
+
+promiseOne(true)
+.then((res) => console.log(res))
+.catch((err) => console.log(err))
+
+promiseTwo(true)
+.then((res)=> console.log(res))
+.catch((res)=> console.log(res))
+
+
+
+async function multipulePromiseHandle () {
+  const data = await Promise.all([promiseOne(true), promiseTwo(true)])
+  console.log(data)
 }
 
