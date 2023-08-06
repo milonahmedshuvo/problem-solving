@@ -158,5 +158,23 @@ const webDeveloper = () => {
 }
 
 
+// handle Promise 
+const makePromise = (control) =>{
+  return new Promise((resolve, reject) => {
+
+      setTimeout(() =>{
+        if(control){
+          resolve("Succefull data in Server")
+        }else{
+          reject("promise is reject")
+        }
+      },3000)
+  })
+}
 
 
+makePromise(true)
+.then((res) => {
+ 
+})
+.catch((er) => console.log(er))
