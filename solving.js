@@ -229,6 +229,7 @@ setTimeout(function() {
 
 
 
+
 //5. Error handleling 
 try{
   // console.aula('This is an error');
@@ -263,7 +264,7 @@ const promiseTwo = (control) => {
         }else{
           reject("promise two reject")
         }
-       },4000)
+       },1000)
      })
 }
 
@@ -281,4 +282,40 @@ async function multipulePromiseHandle () {
   const data = await Promise.all([promiseOne(true), promiseTwo(true)])
   console.log(data)
 }
+
+
+
+
+// 7.multipule callback function use is complex code:
+const getName = new Promise((resolve, reject)=>{
+   return resolve("shuvo")
+})
+
+const getAge = (name) =>{
+  return new Promise((resolve, reject) => {
+       setTimeout(() => {
+         if(name === "shuvo"){
+          resolve(22)
+         }else{
+          reject(10)
+         }
+       },3000)
+  })
+}
+
+getName
+.then((name)=> {
+   getAge(name).then((age) => {
+    console.log("My name is", name , "is age ", age)
+   })
+})
+
+
+const getmyValue = async() =>{
+  const name =await getName
+  const age = await getAge(name)
+  console.log(name, age)
+}
+
+
 
