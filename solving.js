@@ -60,7 +60,7 @@ const result = howPeket(100)
     
 
 
-//3. Print the multiplication table with 4
+//3. Print the multiplication table with 4   = OUTPUT: 4 * 1 = 4
 // 4.Print all the multiplication tables with numbers from 1 to 10
 // 5.  Calculate the sum of numbers from 1 to 10 // array number
 // 6.Calculate the sum of odd numbers greater than 10 and less than 30
@@ -311,11 +311,6 @@ getName
 })
 
 
-const getmyValue = async() =>{
-  const name =await getName
-  const age = await getAge(name)
-  console.log(name, age)
-}
 
 
 
