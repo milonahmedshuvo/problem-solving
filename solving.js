@@ -321,3 +321,19 @@ for( let i = 1 ; i <=10; i++){
 
 
 
+let yourDate = new Date()
+yourDate.toISOString().split('T')[0]
+
+
+console.log("date:", yourDate)
+
+
+
+const date = new Date();
+
+let day = date.getDate();
+let month = date.getMonth() + 1;
+let year = date.getFullYear();
+
+
+console.log(day)
