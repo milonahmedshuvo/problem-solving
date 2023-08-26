@@ -334,6 +334,7 @@ const date = new Date();
 let day = date.getDate();
 let month = date.getMonth() + 1;
 let year = date.getFullYear();
+let formate = `${day}/${month}/${year}`
 
 
-console.log(day)
+console.log(formate)
