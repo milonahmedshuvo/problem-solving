@@ -338,3 +338,24 @@ let formate = `${day}/${month}/${year}`
 
 
 console.log(formate)
+
+
+//  1 * 1 = 1
+//  2 * 1 = 2
+
+
+
+for (let i = 0 ; i<= 10 ; i++) {
+  givingMain(i)
+}
+
+function givingMain (number) {
+  for(let i = 1; i <=10; i++){
+     let line = number + " * " + i + " = " + number * i 
+    
+  }
+}
+
+
+
+
