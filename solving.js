@@ -345,17 +345,22 @@ console.log(formate)
 
 
 
-for (let i = 0 ; i<= 10 ; i++) {
-  givingMain(i)
+function createPromise (control) {
+  return new Promise((resolve, reject) => {
+      setTimeout(() =>{
+         if(control){
+          resolve("succes...")
+         }else{
+          reject("Error hoise...")
+         }
+      }, 1000)
+
+  })
 }
 
-function givingMain (number) {
-  for(let i = 1; i <=10; i++){
-     let line = number + " * " + i + " = " + number * i 
-    
-  }
-}
-
+createPromise(true)
+.then((res) => console.log(res))
+.catch((err) => console.log(err))
 
 
 
