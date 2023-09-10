@@ -321,23 +321,10 @@ for( let i = 1 ; i <=10; i++){
 
 
 
-let yourDate = new Date()
-yourDate.toISOString().split('T')[0]
-
-
-console.log("date:", yourDate)
 
 
 
-const date = new Date();
 
-let day = date.getDate();
-let month = date.getMonth() + 1;
-let year = date.getFullYear();
-let formate = `${day}/${month}/${year}`
-
-
-console.log(formate)
 
 
 //  1 * 1 = 1
@@ -364,3 +351,32 @@ createPromise(true)
 
 
 
+function asyncrouse() {
+  return new Promise((resolve, reject) => {
+      let is = true
+      if(is){
+        resolve("succes")
+      }else{
+        reject("Filed")
+      }
+  })
+}
+
+asyncrouse()
+.then((res) => console.log(res))
+.catch((err) => console.log(err))
+
+
+let myNumberArray = [3,2, 4, 2, 6, 34,67,42]
+
+let big = myNumberArray[0]
+
+for(let i = 0; i <= myNumberArray.length; i++){
+    if(myNumberArray[i] > big){
+      big = myNumberArray[i]
+    }
+}
+
+
+
+console.log(big)
