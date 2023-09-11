@@ -367,7 +367,7 @@ asyncrouse()
 .catch((err) => console.log(err))
 
 
-let myNumberArray = [3,2, 4, 2, 6, 34,67,42]
+let myNumberArray = [3,2, 4, 2, 6, 354,67,42]
 
 let big = myNumberArray[0]
 
@@ -376,7 +376,7 @@ for(let i = 0; i <= myNumberArray.length; i++){
       big = myNumberArray[i]
     }
 }
-
-
-
 console.log(big)
+
+
+
