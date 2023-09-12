@@ -380,3 +380,16 @@ console.log(big)
 
 
 
+let sum = [5, 4]
+
+const sumAll = sum.reduce((previous, current ) => previous + current, 0)
+console.log(sumAll)
+
+
+
+const allResult =sum.reduce(sumFunc, 0)
+console.log(allResult)
+
+function sumFunc (f, l) {
+  return f + l
+}
