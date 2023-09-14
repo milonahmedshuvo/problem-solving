@@ -393,3 +393,11 @@ console.log(allResult)
 function sumFunc (f, l) {
   return f + l
 }
+
+const promise = new promise((resolve, reject) => {
+    if(true){
+      resolve('true')
+    }else{
+      reject("false")
+    }
+})
