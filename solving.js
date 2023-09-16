@@ -401,3 +401,13 @@ const promise = new promise((resolve, reject) => {
       reject("false")
     }
 })
+
+
+
+  new promise((resolve, reject) =>{
+    if(true){
+      resolve("success")
+    }else{
+      reject("error")
+    }
+  })
