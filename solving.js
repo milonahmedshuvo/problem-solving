@@ -411,3 +411,10 @@ const promise = new promise((resolve, reject) => {
       reject("error")
     }
   })
+
+
+  const string = "bangla"
+  const number= 32
+  const array = []
+  const object = {}
+  
