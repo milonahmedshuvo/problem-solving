@@ -137,6 +137,9 @@ var myCustomObj = {
 const fruits = ["Banana", "Orange", "Apple", "Mango"];
 console.log(fruits)
 
+const student = ["Rohim", "Korim"]
 
-console.log(fruits.push("bangladesh"))
+console.log(fruits.concat(student))
 console.log(fruits)
+
+
