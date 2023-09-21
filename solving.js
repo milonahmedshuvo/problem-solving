@@ -139,7 +139,19 @@ console.log(fruits)
 
 const student = ["Rohim", "Korim"]
 
-console.log(fruits.concat(student))
+console.log(fruits.concat("sutent"))
 console.log(fruits)
+
+
+const myArr = [[1,2],[3,4],[5,6,] ];
+const newArr = myArr.flat();
+console.log(myArr)
+console.log(newArr)
+
+
+const
+
+
+
 
 
