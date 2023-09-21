@@ -149,7 +149,7 @@ console.log(myArr)
 console.log(newArr)
 
 
-const
+const number = 34454
 
 
 
