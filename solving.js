@@ -149,9 +149,18 @@ console.log(myArr)
 console.log(newArr)
 
 
-const number = 34454
 
 
+
+function prerantFunc (n) {
+
+  return function childFunc (p){
+    return n + p
+  }
+}
+
+const prarntValue = prerantFunc(10)
+console.log(prarntValue(5))
 
 
 
