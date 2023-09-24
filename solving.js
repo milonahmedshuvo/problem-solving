@@ -137,30 +137,18 @@ var myCustomObj = {
 const fruits = ["Banana", "Orange", "Apple", "Mango"];
 console.log(fruits)
 
-const student = ["Rohim", "Korim"]
 
-console.log(fruits.concat("sutent"))
+console.log(fruits.shift())
 console.log(fruits)
 
 
-const myArr = [[1,2],[3,4],[5,6,] ];
-const newArr = myArr.flat();
-console.log(myArr)
-console.log(newArr)
 
 
 
 
 
-function prerantFunc (n) {
 
-  return function childFunc (p){
-    return n + p
-  }
-}
 
-const prarntValue = prerantFunc(10)
-console.log(prarntValue(5))
 
 
 
