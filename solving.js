@@ -141,6 +141,9 @@ console.log(fruits)
 console.log(fruits.shift())
 console.log(fruits)
 
+const el = fruits.map((ele) => ele)
+
+
 
 
 
