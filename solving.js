@@ -143,7 +143,11 @@ console.log(fruits)
 console.log(fruits)
 
 
-const res = rull.every((el) => el < 4 )
+// const res = rull.every((el) => el < 4 )
+const res = fruits.includes("Banana")
+// const res = rull.join("")
+// const res = rull.findIndex((el) => el === 3)
+// const res = rull.indexOf(1)
 console.log(res)
 
 
