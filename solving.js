@@ -137,11 +137,17 @@ var myCustomObj = {
 const fruits = ["Banana", "Orange", "Apple", "Mango"];
 console.log(fruits)
 
+const rull = [1, 2, 3]
 
-console.log(fruits.shift())
+console.log(fruits)
 console.log(fruits)
 
-const el = fruits.map((ele) => ele)
+
+const res = rull.every((el) => el < 4 )
+console.log(res)
+
+
+
 
 
 
