@@ -148,6 +148,7 @@ console.log(fruits)
 // const res = rull.join("")  /all element add return new string 
 // const res = rull.findIndex((el) => el === 3)
 // const res = rull.indexOf(1)
+const res = fruits.push("bangladesh")
 console.log(res)
 
 
