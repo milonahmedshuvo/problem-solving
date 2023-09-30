@@ -152,17 +152,26 @@ console.log(fruits)
 
 
 
-const arr = [4,15, 2, 3, 4, 5]
 
-let smallNumber = arr[0]
 
-for(let i = 0; i < arr.length; i++){
-  if(arr[i] < smallNumber ){
-    smallNumber = arr[i]
+
+function updated (arr) {
+  for(let i = 0; i<arr.length; i++){
+    arr[i] = `${i + 1}, ${arr[i]}`
   }
+  return arr
 }
 
-console.log(smallNumber)
+const updateResult = updated(fruits)
+
+
+
+console.log(fruits)
+console.log(updateResult)
+console.log(fruits === updateResult)
+const a = []
+const b = []
+console.log(a === b)
 
 
 
