@@ -148,9 +148,18 @@ console.log(fruits)
 
 
 // fruits[3]="node js"
-   fruits[fruits.length] = "node"
+// fruits[fruits.length] = "node"
 
-console.log(fruits)
+const a1 = []
+console.log(a1, a1.length)
+
+// constructor pattan 
+const a2 = new Array(5)
+console.log(a2, a2.length)
+
+// Fuctory pattan 
+const a3 = Array()
+console.log(a3, a3.length)
 
 
 
