@@ -150,19 +150,19 @@ console.log(fruits)
 // fruits[3]="node js"
 // fruits[fruits.length] = "node"
 
-const a1 = []
-console.log(a1, a1.length)
-
-// constructor pattan 
-const a2 = new Array(5)
-console.log(a2, a2.length)
-
-// Fuctory pattan 
-const a3 = Array()
-console.log(a3, a3.length)
 
 
+const arr = [4,15, 2, 3, 4, 5]
 
+let smallNumber = arr[0]
+
+for(let i = 0; i < arr.length; i++){
+  if(arr[i] < smallNumber ){
+    smallNumber = arr[i]
+  }
+}
+
+console.log(smallNumber)
 
 
 
