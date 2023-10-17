@@ -152,61 +152,15 @@ console.log(fruits)
 
 
 
+const list = document.getElementById("list")
 
-
-
-function updated (arr) {
-  for(let i = 0; i<arr.length; i++){
-    arr[i] = `${i + 1}, ${arr[i]}`
-  }
-  return arr
-}
-
-const updateResult = updated(fruits)
-
-
-
-// console.log(fruits)
-// console.log(updateResult)
-// console.log(fruits === updateResult)
-// const a = []
-// const b = []
-// console.log(a === b)
+list.addEventListener("click", (e) => {
+   e.target.style.backgroundColor="red"
+})
 
 
 
 
-const arr = [
-  {id: 1, name:"milon"},
-  {id: 2, name:"mizan"},
-  {id: 3, name:"milu"},
-  {id: 4, name:"momo"},
-  {id: 5, name:"mmmm in"},
-]
-
-
-
-
-const myid =3
-for(let i = 0; i<arr.length; i++){
-
-  if(arr[i].id === myid){
-    arr[i].name = " milu hasan"
-  }
-}
-
-
-const maltipule = [
-  [1, 2],
-  [3, 4, 5],
-  [6, 7, 8, 9]
-]
-
-for(let i =0; i<maltipule.length; i++){
-    for(let j = 0; j<maltipule[i].length; j++){
-      console.log(maltipule[i][j] )
-    }
-}
 
 
 
