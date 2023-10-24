@@ -160,9 +160,12 @@ list.addEventListener("click", (e) => {
 
 
 
+function hellothis () {
+  "use strict"
+  console.log(this)
+}
 
-
-
+hellothis()
 
 
 
