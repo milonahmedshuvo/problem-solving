@@ -164,8 +164,32 @@ function hellothis () {
   "use strict"
   console.log(this)
 }
-
 hellothis()
+
+
+function golobal () {
+  window.country = "BANGLADESH"
+}
+ 
+golobal()
+  console.log(country)
+
+
+
+
+const Parson = function (name, age, salary){
+  this.namy = name,
+  this.age  = age,
+  this.salary = salary,
+  this.country = function () {
+    console.log(this.namy, this.salary)
+  }
+}
+
+const mainobject = new Parson("milon", 23, 35600)
+console.log(mainobject)
+console.log(mainobject.namy)
+mainobject.country()
 
 
 
