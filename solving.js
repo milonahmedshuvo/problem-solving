@@ -134,13 +134,18 @@ var myCustomObj = {
 
 
 
+
+
+
+
+const rull = [4, 4, 7]
 const fruits = ["Banana", "Orange", "Apple", "Mango"];
-console.log(fruits)
 
 
 
 
-// const res = rull.every((el) => el < 4 )
+
+const res = rull.every((el) => el < 2 )
 // const res = fruits.includes("Banana") true
 // const res = rull.join("")  /all element add return new string 
 // const res = rull.findIndex((el) => el === 3)
@@ -152,45 +157,43 @@ console.log(fruits)
 
 
 
-const list = document.getElementById("list")
-
-list.addEventListener("click", (e) => {
-   e.target.style.backgroundColor="red"
-})
-
-
-
-function hellothis () {
-  "use strict"
-  console.log(this)
-}
-hellothis()
-
-
-function golobal () {
-  window.country = "BANGLADESH"
-}
- 
-golobal()
-  console.log(country)
+// function Parson (name) {
+//   this.name = name
+// }
 
 
 
 
-const Parson = function (name, age, salary){
-  this.namy = name,
-  this.age  = age,
-  this.salary = salary,
-  this.country = function () {
-    console.log(this.namy, this.salary)
-  }
+// Parson.prototype = {
+//   play() {
+//     console.log("parson is sleeping")
+//   },
+//   laptop () {
+//      console.log("this is laptop")
+//   }
+// }
+
+// const sakib = new Parson("sakib")
+// sakib.play()
+// sakib.laptop()
+
+
+
+const Student = function () {
+  var a = 10;
+  var b = 10;
+  return a + b
 }
 
-const mainobject = new Parson("milon", 23, 35600)
-console.log(mainobject)
-console.log(mainobject.namy)
-mainobject.country()
+Student.prototype = {
+info(){
+  console.log("student info")
+}
+}
 
+const shuvo = new Student()
+
+shuvo.info()
 
 
 
