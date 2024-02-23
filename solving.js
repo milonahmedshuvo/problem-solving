@@ -191,9 +191,7 @@ info(){
 }
 }
 
-const shuvo = new Student()
 
-shuvo.info()
 
 
 
